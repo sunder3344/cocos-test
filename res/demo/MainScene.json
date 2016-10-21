@@ -1,0 +1,242 @@
+{
+  "ID": "a2ee0952-26b5-49ae-8bf9-4f1d6279b798",
+  "Version": "3.10.0.0",
+  "Name": "MainScene",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Children": [
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "HelloWorld.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 474.0,
+              "Y": 320.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.4938,
+              "Y": 0.5
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "LeftMargin": -6.0,
+            "RightMargin": 6.0,
+            "Tag": 5,
+            "ActionTag": 953446860,
+            "Size": {
+              "X": 960.0,
+              "Y": 640.0
+            },
+            "Name": "Default",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FontSize": 14,
+            "ButtonText": "Button",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "DisabledFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Disable.png",
+              "Plist": ""
+            },
+            "PressedFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Press.png",
+              "Plist": ""
+            },
+            "NormalFileData": {
+              "Type": "Normal",
+              "Path": "ball.jpg",
+              "Plist": ""
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 11,
+            "Scale9Width": 170,
+            "Scale9Height": 178,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 204.0,
+              "Y": 282.0
+            },
+            "Scale": {
+              "ScaleX": 0.26,
+              "ScaleY": 0.25
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.2125,
+              "Y": 0.4406
+            },
+            "PreSize": {
+              "X": 0.2083,
+              "Y": 0.3125
+            },
+            "LeftMargin": 104.0,
+            "RightMargin": 656.0,
+            "TopMargin": 258.0,
+            "BottomMargin": 182.0,
+            "Tag": 35,
+            "ActionTag": -1312819738,
+            "Size": {
+              "X": 200.0,
+              "Y": 200.0
+            },
+            "Name": "Button_1",
+            "ctype": "ButtonObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "ball3.jpg",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 744.9979,
+              "Y": 279.9995
+            },
+            "Scale": {
+              "ScaleX": 0.3818,
+              "ScaleY": 0.38
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.776,
+              "Y": 0.4375
+            },
+            "PreSize": {
+              "X": 0.2292,
+              "Y": 0.3438
+            },
+            "LeftMargin": 634.9979,
+            "RightMargin": 105.0021,
+            "TopMargin": 250.0005,
+            "BottomMargin": 169.9995,
+            "Tag": 37,
+            "ActionTag": -1436052889,
+            "Size": {
+              "X": 220.0,
+              "Y": 220.0
+            },
+            "Name": "Sprite_1",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Default",
+              "Path": "Default/DemoPlayer.ExportJson",
+              "Plist": ""
+            },
+            "IsLoop": true,
+            "IsAutoPlay": true,
+            "CurrentAnimationName": "walk",
+            "AnchorPoint": {},
+            "Position": {
+              "X": 734.0,
+              "Y": 385.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": true,
+            "PrePosition": {
+              "X": 0.7646,
+              "Y": 0.6016
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 734.0,
+            "RightMargin": 226.0,
+            "TopMargin": 255.0,
+            "BottomMargin": 385.0,
+            "Tag": 39,
+            "ActionTag": 822681454,
+            "Size": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Name": "ArmatureNode_3",
+            "ctype": "ArmatureNodeObjectData"
+          }
+        ],
+        "Size": {
+          "X": 960.0,
+          "Y": 640.0
+        },
+        "Name": "Scene",
+        "ctype": "SingleNodeObjectData"
+      },
+      "UsedResources": [
+        "ball.jpg",
+        "ball3.jpg",
+        "Default/Button_Disable.png",
+        "Default/Button_Press.png",
+        "Default/DemoPlayer.ExportJson",
+        "Default/DemoPlayer0.plist",
+        "Default/DemoPlayer0.png",
+        "HelloWorld.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Scene"
+}
