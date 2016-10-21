@@ -18,9 +18,39 @@ var res = {
 	FIREMAN_JSON : "res/fireman/Demon.ExportJson",
 	FIREMAN_PLIST : "res/fireman/Demon0.plist",
 	FIREMAN_PNG : "res/fireman/Demon0.png",
+	PARALLAX_LAYER : "res/parallax/bgLayer.jpg",
+	PARALLAX_LAYER2 : "res/parallax/bgLayer2.png",
+	PARALLAX_LAYER3 : "res/parallax/bgLayer3.png",
+	PARALLAX_LAYER4 : "res/parallax/bgLayer4.png",
+	TILED_MAP : "res/tiledMap/map.tmx",
+	TILED_MAP_PNG : "res/tiledMap/tile0.png",
+	TILED_DESERT_PNG : "res/tiledMap/tmw_desert_spacing.png",
+	BM0_PNG : "res/bmFont/bm_0.png",
+	BM_FNT : "res/bmFont/bm.fnt",
+	BM_FONT_PNG : "res/bmFont/font_0.png",
+	BM_FONT_FNT : "res/bmFont/font.fnt",
+	PARTICLE_FIRE : "res/particle/fire.png",
+	PARTICLE_FIREWORK : "res/particle/firework.png",
+	PARTICLE_PLIST : "res/particle/particle.plist",
+	PARTICLE_SNOW : "res/particle/snow.png",
+	PARTICLE_STAR : "res/particle/star.png",
+	PARTICLE_TEXTURE : "res/particle/texture.png",
+//	POP1_PNG : "res/lolipop/1.png",
+//	POP2_PNG : "res/lolipop/2.png",
+//	POP3_PNG : "res/lolipop/3.png",
+//	POP4_PNG : "res/lolipop/4.png",
+//	POP5_PNG : "res/lolipop/5.png",
+//	POP_BG_PNG : "res/lolipop/bg.jpg",
 };
 
-var g_resources = [];
+var g_resources = [
+	"res/lolipop/1.png",
+	"res/lolipop/2.png",
+	"res/lolipop/3.png",
+	"res/lolipop/4.png",
+	"res/lolipop/5.png",
+	"res/lolipop/bg.jpg"
+];
 for (var i in res) {
     g_resources.push(res[i]);
 }
