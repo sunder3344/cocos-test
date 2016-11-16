@@ -1,6 +1,7 @@
 var SPRITE_WIDTH = 64;
 var SPRITE_HEIGHT = 64;
 var DEBUG_NODE_SHOW = false;
+var _ball = null;
 
 var HelloWorldLayer = cc.Layer.extend({
 	i : 0,
@@ -14,11 +15,11 @@ var HelloWorldLayer = cc.Layer.extend({
 		this.scheduleUpdate();*/
 		
 		//弹射的小球
-		this.ball = new cc.Sprite("res/cubes.jpg");
+		_ball = new cc.Sprite("res/cubes.jpg");
 		var winSize = cc.director.getWinSize();
-		this.ball.x = winSize.width / 2;
-		this.ball.y = winSize.height / 4;
-		this.addChild(this.ball);
+		_ball.x = winSize.width / 2;
+		_ball.y = winSize.height / 4;
+		this.addChild(_ball);
 		
 		if ("touches" in cc.sys.capabilities) {
 			cc.eventManager.addListener({
@@ -49,8 +50,8 @@ var HelloWorldLayer = cc.Layer.extend({
 		this._flag = 0;
 		var pos = event.getLocation();
 		var winSize = cc.director.getWinSize();
-		var action = cc.jumpTo(0.25, cc.p(winSize.width/2, this.ball.y + 50), 50, 1);
-		this.ball.runAction(action);
+		var action = cc.jumpTo(0.25, cc.p(winSize.width/2, _ball.y + 150), 50, 1);
+		_ball.runAction(action);
 	},
 	
 	_onMainMouseUp:function() {
@@ -60,22 +61,29 @@ var HelloWorldLayer = cc.Layer.extend({
 	update:function() {
 		if (this._flag == 1) {
 			var winSize = cc.director.getWinSize();
-			var action = cc.jumpTo(0.3, cc.p(winSize.width/2, this.ball.y - 3), -3, 1);
-			this.ball.runAction(action);
+			var action = cc.jumpTo(0.3, cc.p(winSize.width/2, _ball.y - 8), -8, 1);
+			_ball.runAction(action);
 		}
 	}
 });
 
 var HelloWorldScene = cc.Scene.extend({
+	layer: null,
     onEnter:function () {
         this._super();
-        var layer = new HelloWorldLayer();
-        this.addChild(layer);
+        this.layer = new HelloWorldLayer();
+        this.addChild(this.layer);
 		this.scheduleUpdate();
     },
 	
 	update:function() {
-		cc.log('asdf111');
+		var winSize = cc.director.getWinSize();
+		if (_ball.y <= 0-_ball.height) {
+			cc.log("fail");
+		}
+		if (_ball.y >= this.layer.height) {
+			cc.log("success");
+		}
 	}
 });
 
